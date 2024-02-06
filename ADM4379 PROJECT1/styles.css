@@ -11,6 +11,22 @@ header {
     padding: 10px;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav a.active {
+    color: #a8a8a8;
+}
+
 #edit-profile {
     max-width: 600px;
     margin: 20px auto;
@@ -65,15 +81,6 @@ button:hover {
     background-color: #45a049;
 }
 
-forum-user{
-    font-weight: bold;
-    display: block;
-    color: #BBBBBB;
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
 #forum-content {
     max-width: 600px;
     margin: 20px auto;
@@ -83,13 +90,35 @@ forum-user{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+forum-user{
+    font-weight: bold;
+    color: #818181;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
 post-content{
     color: #000000;
     max-width: 450px;
-    margin: 30px;
-    padding: 20px
+    border: #000000;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #bbb;
 }
 
 forum-reply{
-    
+    font-weight: bold;
+    color: #818181;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 50px;
+
+}
+
+post-reply{
+    color: #0066ff;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
 }
