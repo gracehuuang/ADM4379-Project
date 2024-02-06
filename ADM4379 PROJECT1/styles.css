@@ -66,8 +66,8 @@ button:hover {
 }
 
 forum-user{
-    font-weight: bold
-    color: #BBBBBB
+    font-weight: bold;
+    color: #BBBBBB;
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
@@ -83,8 +83,8 @@ forum-user{
 }
 
 post-content{
-    color: #000000
-    max-width: 450px
+    color: #000000;
+    max-width: 450px;
     margin: 30px;
     padding: 20px
 }
