@@ -67,6 +67,7 @@ button:hover {
 
 forum-user{
     font-weight: bold;
+    display: block;
     color: #BBBBBB;
     max-width: 500px;
     margin: 20px auto;
