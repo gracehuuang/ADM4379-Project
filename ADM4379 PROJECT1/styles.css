@@ -81,6 +81,11 @@ forum-user{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+post-content{
+    margin: 30px auto;
+    max-width: 400px
+}
+
 forum-reply{
     
 }
