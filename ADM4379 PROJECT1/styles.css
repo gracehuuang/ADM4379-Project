@@ -111,14 +111,18 @@ forum-reply{
     font-weight: bold;
     color: #818181;
     max-width: 500px;
-    margin: 30px auto;
-    padding: 50px;
+    margin-left: 50px;
+    padding: 20px;
 
 }
 
-post-reply{
-    color: #0066ff;
-    max-width: 500px;
-    margin: 30px auto;
-    padding: 20px;
+reply-content{
+    color: #000000;
+    max-width: 300px;
+    border: #000000;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #bbb;
+    margin-left: 0px;
+    font-size: 12px;
 }
