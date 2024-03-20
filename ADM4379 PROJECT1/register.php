@@ -2,14 +2,14 @@
 require_once "connection.php";
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
-    $fname = $_POST['first name'];
-    $lname = $_POST['last name'];
+    $fname = $_POST['first_name'];
+    $lname = $_POST['last_name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     
-    $sql = "INSERT INTO users (first name, last name, email, password) VALUES (?, ?, ?)";
+    $sql = "INSERT INTO users (first_name, last_name, email, password) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sss", $name, $email, $password);
+    $stmt->bind_param("ssss", $fname, $email, $password);
 
     if($stmt-> execute()) {
         header("Location: login.php");
@@ -19,6 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $stmt->close();
+    
 
 }
 
