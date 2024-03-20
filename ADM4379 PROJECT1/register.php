@@ -1,6 +1,5 @@
 <?php
 
-//require_once "connection.php";
 <?php
 // Database configuration
 $db_host = 'localhost'; // Change this to your database server hostname
@@ -19,6 +18,7 @@ if ($conn->connect_error) {
 
 echo "Connected successfully";
 ?>
+require_once "connection.php";
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $fname = $_POST['first_name'];
