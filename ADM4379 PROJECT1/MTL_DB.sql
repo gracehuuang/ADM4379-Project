@@ -40,10 +40,10 @@ CREATE TABLE `User` (
 --
 
 INSERT INTO `User` (`ID`, `username`, `password`, `year`, `program`) VALUES
-(1, 'camikaci', 'test123', 4, 'BTM'),
-(2, 'kaci', 'test1234', 2, 'marketing'),
-(3, 'camilia', '12356', 1, 'accounting'),
-(4, 'camikaciii', '1234test', 3, 'HR');
+(1, 'camiliakaci', 'test123', 4, 'BTM'),
+(2, 'shaykirk', 'test1234', 2, 'marketing'),
+(3, 'gracehuang', '12356', 1, 'accounting'),
+(4, 'jacobaristotle', '1234test', 3, 'HR');
 
 --
 -- Indexes for dumped tables
