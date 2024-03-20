@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Mar 20, 2024 at 07:12 PM
+-- Generation Time: Mar 20, 2024 at 07:26 PM
 -- Server version: 5.7.39
 -- PHP Version: 7.4.33
 
@@ -45,11 +45,11 @@ CREATE TABLE `register_user` (
 --
 
 INSERT INTO `register_user` (`ID`, `First Name`, `Last Name`, `Email`, `Password`, `Display Name`, `Program`, `Year of Study`, `GPA`, `BIO`) VALUES
-(1, 'Camilia', 'Kaci', 'ckaci101@uottawa.ca', '', 'camiliakaci', 'Business Technology Management', 'Fourth Year', 8, 'hello I\'m Cami!'),
-(2, 'Shay ', 'Kirk', 'skirk065@uottawa.ca', '', 'shaykirk', 'Business Technology Management', 'Fourth Year', 8, 'hello im shay'),
-(3, 'Jacob', 'Aristotle', 'jaris096@uottawa.ca', '', 'jacobaristotle', 'business techonology management', 'fourth year', 8, 'hello im jacob'),
-(4, 'Joseph', 'Eid', 'jeid102@uottawa.ca', '', 'Joeyeid', 'business technology management', 'fourth year', 8, 'hello im joey'),
-(5, 'Kurtis', 'Ikkers', 'kikke019@uottawa.ca', '', 'Kurtisikkers', 'business technology management', 'fourth year', 8, 'hello im kurtis');
+(1, 'Camilia', 'Kaci', 'ckaci101@uottawa.ca', 'c1234', 'camiliakaci', 'Business Technology Management', 'Fourth Year', 8, 'hello I\'m Cami!'),
+(2, 'Shay ', 'Kirk', 'skirk065@uottawa.ca', 's1234', 'shaykirk', 'Business Technology Management', 'Fourth Year', 8, 'hello im shay'),
+(3, 'Jacob', 'Aristotle', 'jaris096@uottawa.ca', 'j1234', 'jacobaristotle', 'business techonology management', 'fourth year', 8, 'hello im jacob'),
+(4, 'Joseph', 'Eid', 'jeid102@uottawa.ca', 'j1234', 'Joeyeid', 'business technology management', 'fourth year', 8, 'hello im joey'),
+(5, 'Kurtis', 'Ikkers', 'kikke019@uottawa.ca', 'k1234', 'Kurtisikkers', 'business technology management', 'fourth year', 8, 'hello im kurtis');
 
 --
 -- Indexes for dumped tables
@@ -75,3 +75,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
