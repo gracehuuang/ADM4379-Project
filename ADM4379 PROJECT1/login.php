@@ -25,31 +25,13 @@
 
         <?php
 
-            if(@$_GET['Empty']==true){
-
-
-        ?>
-
-            <div><?php echo $_GET['Empty'] ?></div>               
-
-        <?php
-        
-            }
-
-        ?>
-
-        <?php
-
-            if(@$_GET['Invalid']==true){
-
-
-        ?>
-
-            <div><?php echo $_GET['Invalid'] ?></div>               
-
-        <?php
-
+            if(isset($_GET['Empty']) && $_GET['Empty']==true){
+                echo "<div>Email and Password are required!</div>";                
         }
+
+            if(isset($_GET['Invalid']) && $_GET['Invalid']==true){
+                echo "<div>Invalid Email or Password!</div>";               
+        }       
 
         ?>
 
