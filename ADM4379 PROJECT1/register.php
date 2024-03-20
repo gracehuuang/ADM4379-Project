@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
         //echo "After redirection"; // Debug output (This won't be reached if redirection occurs)
     } else {
-        echo "Error: " . $stmt->error;
+       echo "Registration failed. Please try again.";
     }
 
     $stmt->close();
