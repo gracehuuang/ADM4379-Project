@@ -23,6 +23,6 @@ if(isset($_POST['login'])) {
         }
     }
 } else {
-    echo "Not Working Now Guys";
+    echo "No Connection";
 }
 ?>
