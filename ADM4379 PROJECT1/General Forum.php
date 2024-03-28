@@ -28,10 +28,10 @@
         <h1>ADM 4379</h1>
             <nav>
                 <a href="#">Home</a>
-                <a href="http://localhost/ADM-4379/General Forum.html" class="active">Forums</a>
-                <a href="http://localhost/ADM-4379/index.html">Profile</a>
+                <a href="General Forum.php" class="active">Forums</a>
+                <a href="index.php">Profile</a>
                 <a href="#">Course Info</a>
-                <a href="http://localhost/ADM-4379/login.html">Login</a>
+                <a href="login.php">Login</a>
             </nav>
     </header>
 
@@ -64,14 +64,5 @@
       
    </section>
    
-   <script>
-
-    setTimeout(function() {
-        document.getElementById('')
-        
-    }, timeout);
-
-    </script>
-
 </body>
 </html>
