@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+
+
+<?php
+    session_start();
+    
+    if(isset($_SESSION['User'])){
+
+        echo 'Welcome ' . $_SESSION['User'] . '<br/>';
+        echo '<a href="logout.php?logout">Logout</a>';
+
+    }
+
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
