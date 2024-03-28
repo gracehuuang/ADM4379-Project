@@ -12,10 +12,10 @@
         <h1>Login</h1>
          <nav>
                 <a href="#">Home</a>
-                <a href="http://localhost/ADM-4379/General Forum.php">Forums</a>
-                <a href="http://localhost/ADM-4379/index.html">Profile</a>
+                <a href="General Forum.php">Forums</a>
+                <a href="index.html">Profile</a>
                 <a href="#">Course Info</a>
-                <a href="http://localhost/ADM-4379/login.html" class="active">Login</a>
+                <a href="login.html" class="active">Login</a>
             </nav>
     </header>
 
