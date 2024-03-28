@@ -7,8 +7,8 @@ if(isset($_POST['login'])) {
         header("location:login.php?Empty=Please fill in the blanks");
         exit; 
     } else {
-        $query = "SELECT * FROM register_user WHERE displayname=? AND password=?";
-        $stmt = $conn->prepare($query);
+        $query = "SELECT * FROM register_user WHERE email=? AND password=?";
+        $stmt = $con->prepare($query);
         $stmt->bind_param("ss", $_POST["email"], $_POST["password"]);
         $stmt->execute();
         $result = $stmt->get_result();
