@@ -29,7 +29,7 @@
             <nav>
                 <a href="#">Home</a>
                 <a href="General Forum.php">Forums</a>
-                <a href="index.php">Profile</a>
+                <a href="profile.php">Profile</a>
                 <a href="Course Search.php">Course Info</a>
                 <a href="login.php">Login</a>
             </nav>
