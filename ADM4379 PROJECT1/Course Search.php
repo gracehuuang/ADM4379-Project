@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <h1>Login</h1>
+        <h1>Course Info</h1>
          <nav>
                 <a href="#">Home</a>
                 <a href="General Forum.php">Forums</a>
