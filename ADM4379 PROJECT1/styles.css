@@ -43,46 +43,46 @@ nav a:hover {
 }
 
 .hero-text {
-    background-color: rgba(0, 0, 0, 0.613); /* Adjust the opacity as needed */
+    background-color: rgba(0, 0, 0, 0.613); 
     padding: 20px;
     border-radius: 8px;
-    display: inline-block; /* Ensure the box only takes the width of its content */
+    display: inline-block; 
 }
 
 .hero-heading {
-    color: #fff; /* Change the color as desired */
+    color: #fff; 
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4caf50; /* Button background color */
-    color: #fff; /* Button text color */
+    background-color: #4caf50; 
+    color: #fff; 
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+    transition: background-color 0.3s ease; 
 }
 
-/* Hover effect for the button */
 .btn:hover {
-    background-color: #45a049; /* Change the background color on hover */
+    background-color: #45a049; 
 }
+
 #features {
     display: flex;
     justify-content: space-around;
-    align-items: center; /* Center items vertically */
+    align-items: center;
     flex-wrap: wrap;
     padding: 50px 0;
 }
 
 .feature {
-    flex: 1 1 30%; /* Adjust width of each feature */
+    flex: 1 1 30%;
     margin: 20px;
     text-align: center;
 }
 
 .box {
-    background-color: #6eb0f696; /* Button background color */
-    color: #fff; /* Button text color */
+    background-color: #6eb0f696; 
+    color: #fff; 
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -91,7 +91,7 @@ nav a:hover {
 }
 
 .box:hover {
-    background-color: #0056b3; /* Change the background color on hover */
+    background-color: #0056b3;
 }
 
 .feature h3 {
