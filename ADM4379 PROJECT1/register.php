@@ -31,14 +31,14 @@
                 <a href="General Forum.php">Forums</a>
                 <a href="index.php">Profile</a>
                 <a href="Course Search.php">Course Info</a>
-                <a href="login
+                <a href="login.php">Login</a>
             </nav>
     </header>
 
     <section id="edit-profile">
         <h2>Personal Information</h2>
         <br>
-        <form action="#" method="post">
+        <form action="registerhandler.php" method="post">
 
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="fname" required>
