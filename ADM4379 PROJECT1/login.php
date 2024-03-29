@@ -85,8 +85,40 @@
 
             document.getElementById("semester").innerHTML = "<strong>Semester:</strong> " + semester;
         }
+            function validateLoginForm() {
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const emailPattern = /\S+@\S+\.\S+/;
+        let valid = true;
+        let errorMessage = '';
+
+        if (!emailInput.value || !emailPattern.test(emailInput.value.trim())) {
+            errorMessage += 'Invalid or missing email address.\n';
+            valid = false;
+        }
+
+        if (!passwordInput.value) {
+            errorMessage += 'Password is required.\n';
+            valid = false;
+        }
+
+        if (!valid) {
+            alert(errorMessage);
+            return false; // Prevent form submission
+        }
+
+        return true; // Allow form submission
+    }
+
 
         window.onload = getSemester;
+        getSemester(); // Existing function call
+        const loginForm = document.querySelector('form');
+        loginForm.onsubmit = function() {
+            return validateLoginForm();
+        };
+    };
+
     </script>
 
 </body>
