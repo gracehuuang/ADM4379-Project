@@ -69,11 +69,29 @@ nav a:hover {
 #features {
     display: flex;
     justify-content: space-around;
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap;
     padding: 50px 0;
 }
 
 .feature {
+    flex: 1 1 30%; /* Adjust width of each feature */
+    margin: 20px;
     text-align: center;
+}
+
+.box {
+    background-color: #6eb0f696; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.box:hover {
+    background-color: #0056b3; /* Change the background color on hover */
 }
 
 .feature h3 {
@@ -95,7 +113,7 @@ nav a:hover {
 }
 
 h2 {
-    margin-bottom: 1px; 
+    margin-bottom: 30px; 
     color: #333;
 }
 
@@ -214,4 +232,31 @@ label {
 .reply-content {
     color: #333;
     margin-top: 5px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px; /* Set the height of the container */
+}
+
+.search-container input[type="text"],
+.search-container button {
+    width: 400px; /* Adjust the width as needed */
+}
+
+.search-container p {
+    text-align: center; /* Center the text */
+}
+
+/* Add styles for the search section */
+#search-section {
+    padding: 20px;
+    text-align: center;
+}
+
+#search-section p {
+    margin-bottom: 20px;
 }
