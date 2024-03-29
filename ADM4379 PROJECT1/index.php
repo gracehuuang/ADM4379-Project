@@ -26,7 +26,7 @@
 
     <section id="hero">
     <div class="hero-text">
-        <h2 class="hero-heading">Your Gateway to the Telfer School of Management Community</h2>
+        <h2 class="hero-heading">Welcome to the heart of Telfer student communication.</h2>
         <p>Connect with peers, access resources, and stay informed about events.</p>
         <a href="register.php" class="btn">Register Now!</a>
     </div>
