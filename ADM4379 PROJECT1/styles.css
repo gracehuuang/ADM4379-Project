@@ -239,19 +239,18 @@ label {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 300px; /* Set the height of the container */
+    height: 300px;
 }
 
 .search-container input[type="text"],
 .search-container button {
-    width: 400px; /* Adjust the width as needed */
+    width: 400px;
 }
 
 .search-container p {
-    text-align: center; /* Center the text */
+    text-align: center;
 }
 
-/* Add styles for the search section */
 #search-section {
     padding: 20px;
     text-align: center;
