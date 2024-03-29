@@ -85,7 +85,8 @@
 
             document.getElementById("semester").innerHTML = "<strong>Semester:</strong> " + semester;
         }
-            function validateLoginForm() {
+        
+        function validateLoginForm() {
         const emailInput = document.getElementById('email');
         const passwordInput = document.getElementById('password');
         const emailPattern = /\S+@\S+\.\S+/;
