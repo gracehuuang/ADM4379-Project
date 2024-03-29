@@ -1,11 +1,12 @@
 body {
-    font-family: Verdana, Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f9f9f9;
     margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #007bff;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -14,6 +15,7 @@ header {
 nav {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 nav a {
@@ -27,6 +29,62 @@ nav a.active {
     color: #a8a8a8;
 }
 
+nav a:hover {
+    color: #ccc; 
+}
+
+#hero {
+    background-image: url('hero-dms.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.613); /* Adjust the opacity as needed */
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block; /* Ensure the box only takes the width of its content */
+}
+
+.hero-heading {
+    color: #fff; /* Change the color as desired */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for the button */
+.btn:hover {
+    background-color: #45a049; /* Change the background color on hover */
+}
+#features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.feature p {
+    color: #666;
+}
+
 #edit-profile {
     max-width: 600px;
     margin: 20px auto;
@@ -38,6 +96,7 @@ nav a.active {
 
 h2 {
     margin-bottom: 1px; 
+    color: #333;
 }
 
 form {
@@ -65,11 +124,16 @@ textarea {
 }
 
 select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
     cursor: pointer;
 }
 
 button {
-    background-color: #87ceeb;
+    background-color: #4caf50; 
     color: #fff;
     padding: 10px;
     border: none;
@@ -79,51 +143,75 @@ button {
 }
 
 button:hover {
-    background-color: #2f9bf3;
+    background-color: #45a049; 
 }
 
-#forum-content {
-    max-width: 600px;
+.container{
+    max-width: 800px;
     margin: 20px auto;
+}
+
+.post-box {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-forum-user{
-    font-weight: bold;
-    color: #818181;
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-post-content{
-    color: #000000;
-    max-width: 450px;
-    border: #000000;
-    border-radius: 4px;
-    padding: 10px;
-    background-color: #bbb;
-}
-
-forum-reply{
-    font-weight: bold;
-    color: #818181;
-    max-width: 500px;
-    margin-left: 50px;
-    padding: 20px;
-
-}
-
-reply-content{
-    color: #000000;
-    max-width: 300px;
-    border: #000000;
-    border-radius: 4px;
-    padding: 10px;
-    background-color: #bbb;
-    margin-left: 0px;
+.post-user {
     font-size: 12px;
+    color: #666;
+}
+
+.post-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.post-content {
+    color: #333;
+}
+
+button.message {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button.message:hover {
+    background-color: #45a049;
+}
+
+.post-form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.reply-box {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.reply-user {
+    font-size: 12px;
+    color: #666;
+}
+
+.reply-content {
+    color: #333;
+    margin-top: 5px;
 }
