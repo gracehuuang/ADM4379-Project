@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 
-
-<?php
-    session_start();
-    
-    if(isset($_SESSION['User'])){
-
-        echo 'Welcome ' . $_SESSION['User'] . '<br/>';
-        echo '<a href="logout.php?logout">Logout</a>';
-
-    }
-
-?>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,13 +10,27 @@
 <body>
 
     <header>
+    <div style='float:right;' id='semester'></div>
+
+    <?php
+        session_start();
+    
+    if(isset($_SESSION['User'])){
+
+        echo '<form action="logout.php" method="post"> 
+        <button type="submit">Logout</button>
+      </form> ';
+
+    }
+
+?>  
         <h1>Sign Up for MyTelferLife</h1>
          <nav>
             <nav>
                 <a href="#">Home</a>
                 <a href="General Forum.php">Forums</a>
                 <a href="index.php">Profile</a>
-                <a href="#">Course Info</a>
+                <a href="Course Search.php">Course Info</a>
                 <a href="login
             </nav>
     </header>
@@ -82,6 +83,28 @@
         </form>
         <br>
     </section>
+ 
+ <script type="text/javascript">
+        function getSemester() {
+
+            var today = new Date();
+            var year = today.getFullYear(); 
+            var month = today.getMonth() + 1; 
+
+            var semester;
+            if (month >= 1 && month <= 4) {
+                semester = "Winter " + year;
+            } else if (month >= 5 && month <= 8) {
+                semester = "Spring/Summer " + year;
+            } else {
+                semester = "Fall " + year;
+            }
+
+            document.getElementById("semester").innerHTML = "<strong>Semester:</strong> " + semester;
+        }
+
+        window.onload = getSemester;
+    </script>
 
 </body>
 </html>
