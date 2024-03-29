@@ -33,7 +33,7 @@
         <h1>ADM 4379</h1>
 
             <nav>
-                <a href="#">Home</a>
+                <a href="index.php">Home</a>
                 <a href="General Forum.php" class="active">Forums</a>
                 <a href="profile.php">Profile</a>
                 <a href="Course Search.php">Course Info</a>
