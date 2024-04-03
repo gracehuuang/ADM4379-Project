@@ -15,7 +15,7 @@ if(isset($_POST['login'])) {
 
         if($result->num_rows > 0) {
             $_SESSION['User'] = $_POST["email"];
-            header("location:General Forum.php");
+            header("location:index.php");
             exit; 
         } else {
             header("location:login.php?Invalid=Please enter correct username and password");
