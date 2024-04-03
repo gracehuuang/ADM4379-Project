@@ -1,5 +1,14 @@
 <?php
-// calling to the database here include '';
+    
+    $con= mysqli_connect('localhost', 'root', '', '');
+
+    if(!$con){
+
+        die('Please Check Your Connection' .mysqli_error($con));
+    }
+
+   
+    
 ?>
 
 <!DOCTYPE html>
