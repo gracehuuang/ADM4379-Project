@@ -56,7 +56,7 @@ if(isset($_GET['search'])){
     $search = $_GET['search'];
 
     // Using Like feature and % to search for similar courses ex. course codes starting with 1.
- $sql = "SELECT * FROM Courses WHERE `Course Code`LIKE'$search%' OR `Course Title`LIKE'$search%' OR `Professor`LIKE'$search%' OR `Term`LIKE'$search%'";
+  $sql = "SELECT * FROM Courses WHERE `Course Code`LIKE'%$search%' OR `Course Title`LIKE'%$search%' OR `Professor`LIKE'%$search%' OR `Term`LIKE'%$search%'";
     $result = mysqli_query($con, $sql);
 
     // Looking to see if any rows can be returned..
