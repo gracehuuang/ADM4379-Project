@@ -93,7 +93,7 @@
 
     window.onload = getSemester;
 
-    // Add click event listener to each reply button
+    // Function for Reply Responses
     const replyButtons = document.querySelectorAll('.reply-button');
     replyButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -104,17 +104,14 @@
         });
     });
 
-    // Add event listener for form submission
     const commentForms = document.querySelectorAll('.comment-form');
     commentForms.forEach(form => {
         form.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent default form submission
 
-            // Get the textarea value
             const commentInput = form.querySelector('textarea[name="comment"]');
             const commentText = commentInput.value;
 
-            // Create new elements for the comment
             const replyBox = form.previousElementSibling;
             const newComment = document.createElement('div');
             newComment.classList.add('reply-box');
@@ -122,28 +119,24 @@
                 <p class="reply-user">You replied:</p>
                 <p class="reply-content">${commentText}</p>
             `;
-
-            // Insert the new comment before the reply button
+            
             replyBox.parentNode.insertBefore(newComment, replyBox);
 
-            // Reset the form
             commentInput.value = '';
             form.style.display = 'none';
         });
     });
 
-    // Add event listener for posting a new conversation
+    // Function for a new Post
     const postForm = document.getElementById('postForm');
     postForm.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
 
-        // Get the input values
         const postTitleInput = postForm.querySelector('input[name="postTitle"]');
         const postTitle = postTitleInput.value;
         const postMessageInput = postForm.querySelector('textarea[name="message"]');
         const postMessage = postMessageInput.value;
 
-        // Create new post elements
         const postBox = document.createElement('div');
         postBox.classList.add('post-box');
         postBox.innerHTML = `
@@ -159,11 +152,9 @@
             </div>
         `;
 
-        // Insert the new post at the top of the section
         const postsSection = document.querySelector('.container');
         postsSection.insertBefore(postBox, postsSection.firstChild);
 
-        // Reset the form
         postTitleInput.value = '';
         postMessageInput.value = '';
     });
