@@ -56,7 +56,7 @@ if(isset($_GET['search'])){
     $search = $_GET['search'];
 
     // Prepare and execute the SQL query
-    $sql = "SELECT * FROM Courses WHERE `Course Code`='$search' OR `Course Title`='$search' OR `Professor`='$search' OR `Term`='$search'";
+ $sql = "SELECT * FROM Courses WHERE `Course Code`LIKE'$search%' OR `Course Title`LIKE'$search%' OR `Professor`LIKE'$search%' OR `Term`LIKE'$search%'";
     $result = mysqli_query($con, $sql);
 
     // Check if any rows are returned
