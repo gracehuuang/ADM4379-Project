@@ -1,6 +1,11 @@
 <?php
-    
-    $con= mysqli_connect('localhost', 'root', '', 'courses_db');
+   
+$hostname = 'localhost';     
+$username = 'root';          
+$password = '';              
+$database = 'courses_db';    
+
+$con= mysqli_connect('localhost', 'root', '', 'courses_db');
 
     if(!$con){
 
