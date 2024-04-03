@@ -13,18 +13,23 @@
         <div style='float:right;' id='semester'></div>
 
         <?php
-            session_start();
-        
-        if(isset($_SESSION['User'])){
+        session_start();
+    
+    if(isset($_SESSION['User'])){
 
-            echo '<form action="logout.php" method="post"> 
-            <button type="submit">Logout</button>
-        </form> ';
+        echo '<form action="logout.php" method="post"> 
+        <button type="submit">Logout</button>
+      </form> ';
 
-        }
+    }
 
-    ?>  
 
+    else{
+
+        header("Location:Login.php");
+    }
+
+?> 
             <h1>User Profile</h1>
             <nav>
                     <a href="index.php">Home</a>
