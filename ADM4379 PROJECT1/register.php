@@ -23,7 +23,7 @@
 
     }
 
-?>  
+?> 
         <h1>Sign Up for MyTelferLife</h1>
          <nav>
             <nav>
