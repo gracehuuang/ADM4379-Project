@@ -55,11 +55,11 @@
 if(isset($_GET['search'])){
     $search = $_GET['search'];
 
-    // Prepare and execute the SQL query
+    // Using Like feature and % to search for similar courses ex. course codes starting with 1.
  $sql = "SELECT * FROM Courses WHERE `Course Code`LIKE'$search%' OR `Course Title`LIKE'$search%' OR `Professor`LIKE'$search%' OR `Term`LIKE'$search%'";
     $result = mysqli_query($con, $sql);
 
-    // Check if any rows are returned
+    // Looking to see if any rows can be returned..
     if($result && mysqli_num_rows($result) > 0){
         echo '<table>';
         echo '<thead>
@@ -95,7 +95,7 @@ if(isset($_GET['search'])){
 </div>
 
 <script type="text/javascript">
-    // Function to get the current semester
+    // JS Function to get the current semester
     function getSemester() {
         var today = new Date();
         var year = today.getFullYear(); 
