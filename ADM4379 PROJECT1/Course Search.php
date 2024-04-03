@@ -1,19 +1,6 @@
 <?php
+   require_once('courses.php');    
    
-$hostname = 'localhost';     
-$username = 'root';          
-$password = '';              
-$database = 'courses_db';    
-
-$con= mysqli_connect('localhost', 'root', '', 'courses_db');
-
-    if(!$con){
-
-        die('Please Check Your Connection' .mysqli_error($con));
-    }
-
-   
-    
 ?>
 
 <!DOCTYPE html>
