@@ -18,14 +18,13 @@
     
     if(isset($_SESSION['User'])){
 
-        echo 'Welcome ' . $_SESSION['User'] . '<br/>';
         echo '<form action="logout.php" method="post"> 
         <button type="submit">Logout</button>
       </form> ';
 
     }
 
-?>      
+?>     
 
         <h1>ADM 4379</h1>
 
