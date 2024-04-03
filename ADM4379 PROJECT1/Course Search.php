@@ -15,6 +15,20 @@
     <header>
     <div style='float:right;' id='semester'></div>
 
+
+<?php
+        session_start();
+    
+    if(isset($_SESSION['User'])){
+
+        echo '<form action="logout.php" method="post"> 
+        <button type="submit">Logout</button>
+      </form> ';
+
+    }
+
+?> 
+
         <h1>Course Info</h1>
          <nav>
                 <a href="index.php">Home</a>
