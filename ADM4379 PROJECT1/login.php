@@ -62,7 +62,7 @@
         <br><br>
 
             <label for="register">New to MyTelferLife?</label>
-           <a href="register.html">
+           <a href="register.php">
             <button id="register">Register Here</button>
         </a>
     </section>
