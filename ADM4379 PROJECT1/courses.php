@@ -1,6 +1,6 @@
 <?php
  
- $con= mysqli_connect('localhost', 'root', '', 'course_search');
+ $con= mysqli_connect('localhost', 'root', '', 'Courses');
 
     if(!$con){
 
