@@ -164,19 +164,52 @@ button:hover {
     background-color: #45a049; 
 }
 
+
+#forum-categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+}
+
+.category {
+    width: 220px; 
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 .subtitle {
     font-weight: bold;
     font-size: 18px; 
-    text-align: left;
+    text-align: center;
     display: block;
     margin-bottom: 5px;
 }
 
 .category ul {
-    margin-left: 0;
-    padding-left: 0;
+    list-style: none;
+    padding: 0;
 }
 
+.category li {
+    margin-bottom: 10px;
+}
+
+.category a {
+    color: #666;
+    text-decoration: none;
+}
+
+.category a:hover {
+    text-decoration: underline; 
+}
 .container{
     max-width: 800px;
     margin: 20px auto;
