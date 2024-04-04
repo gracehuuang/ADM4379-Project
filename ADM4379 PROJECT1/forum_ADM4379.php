@@ -97,9 +97,7 @@
     const replyButtons = document.querySelectorAll('.reply-button');
     replyButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Get the comment form associated with this button
             const commentForm = this.nextElementSibling;
-            // Toggle the visibility of the comment form
             commentForm.style.display = commentForm.style.display === 'none' ? 'block' : 'none';
         });
     });
