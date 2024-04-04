@@ -105,7 +105,7 @@
     const commentForms = document.querySelectorAll('.comment-form');
     commentForms.forEach(form => {
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); 
 
             const commentInput = form.querySelector('textarea[name="comment"]');
             const commentText = commentInput.value;
@@ -127,36 +127,39 @@
 
     // Function for a new Post
     const postForm = document.getElementById('postForm');
-    postForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
+        postForm.addEventListener('submit', function(event) {
+            event.preventDefault(); 
 
-        const postTitleInput = postForm.querySelector('input[name="postTitle"]');
-        const postTitle = postTitleInput.value;
-        const postMessageInput = postForm.querySelector('textarea[name="message"]');
-        const postMessage = postMessageInput.value;
+            const postTitleInput = postForm.querySelector('input[name="postTitle"]');
+            const postTitle = postTitleInput.value;
+            const postMessageInput = postForm.querySelector('textarea[name="message"]');
+            const postMessage = postMessageInput.value;
 
-        const postBox = document.createElement('div');
-        postBox.classList.add('post-box');
-        postBox.innerHTML = `
-            <div class="post-user">Posted by: ${username}</div>
-            <div class="post-title">${postTitle}</div>
-            <div class="post-content">${postMessage}</div>
-            <div class="reply-box">
-                <button class="reply-button">Reply</button>
-                <form class="comment-form" style="display: none;">
-                    <textarea name="comment" placeholder="Type your comment here..."></textarea>
-                    <button type="submit">Post</button>
-                </form>
-            </div>
-        `;
+            const postBox = document.createElement('div');
+            postBox.classList.add('post-box');
+            postBox.innerHTML = `
+                <div class="post-user">Posted by: You </div>
+                <div class="post-title">${postTitle}</div>
+                <div class="post-content">${postMessage}</div>
+                <div class="reply-box">
+                    <button class="reply-button">Reply</button>
+                    <form class="comment-form" style="display: none;">
+                        <textarea name="comment" placeholder="Type your comment here..."></textarea>
+                        <button type="submit">Post</button>
+                    </form>
+                </div>
+            `;
 
-        const postsSection = document.querySelector('.container');
-        postsSection.insertBefore(postBox, postsSection.firstChild);
+           const postsSection = document.querySelector('.container');
 
-        postTitleInput.value = '';
-        postMessageInput.value = '';
-    });
-</script>
+            postsSection.insertBefore(postBox, postsSection.querySelector('h2').nextSibling);
+
+            postTitleInput.value = '';
+            postMessageInput.value = '';
+
+            attachReplyListeners(); // Reattach event listeners to new elements
+        });
+    </script>
 
 
    
