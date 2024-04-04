@@ -50,7 +50,7 @@
         <div class="box">
             <h3>Forums</h3>
             <p>Engage in discussions, ask questions, and share knowledge with fellow Telfer students.</p>
-            <a href="General Forum.php" class="btn">Go to Forums</a>
+            <a href="Forum_Home.php" class="btn">Go to Forums</a>
         </div>
     </div>
     <div class="feature">
