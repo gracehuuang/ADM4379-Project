@@ -29,7 +29,7 @@
         <h1>Welcome to MyTelferLife</h1>
         <nav>
             <a href="index.php" class="active">Home</a>
-            <a href="General Forum.php">Forums</a>
+            <a href="Forum_Home.php">Forums</a>
             <a href="profile.php">Profile</a>
             <a href="Course search.php">Course Info</a>
             <a href="login.php">Login</a>
