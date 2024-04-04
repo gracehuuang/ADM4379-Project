@@ -4,13 +4,13 @@ require_once "connection.php";
 $fname = $lname = $email = $password = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $fname = $_POST['first_name'];
-    $lname = $_POST['last_name'];
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     
-    $sql = "INSERT INTO users (first_name, last_name, email, password) VALUES (?, ?, ?, ?)";
-    $stmt = $conn->prepare($sql);
+    $sql = "INSERT INTO register_user (`First Name`, `Last Name`, `Email`, `Password`) VALUES (?, ?, ?, ?)";
+    $stmt = $con->prepare($sql);
     $stmt->bind_param("ssss", $fname, $lname, $email, $password);
     
    // echo "Before registration execution"; // Debug output
@@ -26,5 +26,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 }
 
-$conn->close();
+$con->close();
 ?>
