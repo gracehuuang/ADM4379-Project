@@ -164,6 +164,19 @@ button:hover {
     background-color: #45a049; 
 }
 
+.subtitle {
+    font-weight: bold;
+    font-size: 18px; 
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.category ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
 .container{
     max-width: 800px;
     margin: 20px auto;
