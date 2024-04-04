@@ -30,7 +30,7 @@
 
             <nav>
                 <a href="index.php">Home</a>
-                <a href="General Forum.php" class="active">Forums</a>
+                <a href="Forum_Home.php" class="active">Forums</a>
                 <a href="profile.php">Profile</a>
                 <a href="Course Search.php">Course Info</a>
                 <a href="login.php">Login</a>
