@@ -27,7 +27,7 @@
         <h1>Sign Up for MyTelferLife</h1>
          <nav>
             <nav>
-                <a href="indes.php">Home</a>
+                <a href="index.php">Home</a>
                 <a href="Forum_Home.php">Forums</a>
                 <a href="profile.php">Profile</a>
                 <a href="Course Search.php">Course Info</a>
